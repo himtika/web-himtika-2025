@@ -1,0 +1,72 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background: #ffffff;
+  --foreground: #171717;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #0a0a0a;
+    --foreground: #ededed;
+  }
+}
+
+body {
+  color: var(--foreground);
+  background: var(--background);
+  font-family: "Plus Jakarta Sans", "Handlee", "Caveat", "Poppins", Arial, Helvetica, sans-serif;
+}
+
+.bg-dual {
+  min-height: 500px; /* Warna ungu tetap terlihat */
+  background: linear-gradient(to bottom, #FFEEFA 500px, #FFFBD7 300px);
+}
+
+.modal-card {
+  background-color: white !important;
+}
+
+/* Custom scrollbar */
+.custom-scrollbar::-webkit-scrollbar {
+  width: 10px; /* Lebar scrollbar */
+}
+
+.custom-scrollbar::-webkit-scrollbar-track {
+  background: #FFFFFF; /* Warna track scrollbar (ungu muda) */
+  border-radius: 10px;
+}
+
+.custom-scrollbar::-webkit-scrollbar-thumb {
+  background: #9333ea; /* Warna thumb scrollbar (ungu tua) */
+  border-radius: 10px;
+}
+
+.custom-scrollbar::-webkit-scrollbar-thumb:hover {
+  background: #7e22ce; /* Warna lebih gelap saat dihover */
+}
+
+/* Custom scrollbar */
+.custom-scrollbar2::-webkit-scrollbar {
+  width: 4px; /* Lebar scrollbar lebih kecil */
+  min-width: 2px; /* Agar tetap tipis */
+}
+
+/* Track scrollbar */
+.custom-scrollbar2::-webkit-scrollbar-track {
+  background: #FFFFFF; 
+  border-radius: 10px;
+}
+
+/* Thumb scrollbar */
+.custom-scrollbar2::-webkit-scrollbar-thumb {
+  background: #C986FF;
+  border-radius: 10px;
+}
+
+/* Hover effect */
+.custom-scrollbar2::-webkit-scrollbar-thumb:hover {
+  background: #B06CE2; /* Warna lebih gelap saat hover */
+}
